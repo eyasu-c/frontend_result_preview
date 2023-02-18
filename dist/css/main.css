@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@500;700;800&display=swap");
+*,
+*::before,
+*::after {
+  font-family: "Epilogue", sans-serif;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 400px) {
+  .container {
+    height: 100vh;
+    align-items: center;
+  }
+}
+.container .container_wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 400px) {
+  .container .container_wrapper {
+    flex-direction: row;
+    box-shadow: 0 0 12px 8px #ddf8ff;
+    border-radius: 30px;
+    width: 45em;
+  }
+}
+.container .container_wrapper .result_wrapper {
+  color: hsl(221deg, 100%, 96%);
+  background-image: linear-gradient(to top, hsl(241deg, 81%, 54%), hsl(241deg, 100%, 65%));
+  min-height: 42vh;
+  margin: auto;
+  display: flex;
+  padding: 2em 3.2em;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+@media (min-width: 400px) {
+  .container .container_wrapper .result_wrapper {
+    border-radius: 30px;
+    width: 50%;
+    min-height: 50vh;
+  }
+}
+.container .container_wrapper .result_wrapper .circle {
+  margin: auto;
+  -webkit-padding-before: 2em;
+          padding-block-start: 2em;
+  width: 130px;
+  height: 130px;
+  line-height: 40px;
+  border-radius: 100%;
+  justify-content: center;
+  background-image: linear-gradient(to top, hsla(241deg, 72%, 46%, 0), hsl(256deg, 72%, 46%));
+}
+.container .container_wrapper .result_wrapper .circle h1 {
+  font-size: 3em;
+}
+.container .container_wrapper .result_wrapper .circle span {
+  color: hsl(241deg, 100%, 89%);
+}
+@media (min-width: 768px) {
+  .container .container_wrapper .result_wrapper .circle {
+    width: 160px;
+    height: 160px;
+    line-height: 50px;
+  }
+  .container .container_wrapper .result_wrapper .circle h1 {
+    font-size: 3.5em;
+  }
+}
+.container .container_wrapper .result_wrapper .slogan h2 {
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+}
+.container .container_wrapper .result_wrapper .slogan p {
+  font-weight: 100;
+  font-size: 16px;
+}
+.container .container_wrapper .detail_wrapper {
+  padding: 2em;
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+  padding-inline: 20px;
+}
+@media (min-width: 400px) {
+  .container .container_wrapper .detail_wrapper {
+    -webkit-margin-before: 0.5rem;
+            margin-block-start: 0.5rem;
+    width: 50%;
+  }
+}
+.container .container_wrapper .detail_wrapper .detail {
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-block: 1em;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+.container .container_wrapper .detail_wrapper .detail .subject {
+  display: flex;
+}
+.container .container_wrapper .detail_wrapper .detail.a_show {
+  color: hsl(0deg, 100%, 67%);
+  background-color: hsla(0deg, 100%, 67%, 0.07);
+}
+.container .container_wrapper .detail_wrapper .detail.b_show {
+  color: hsl(39deg, 100%, 56%);
+  background-color: hsla(39deg, 100%, 56%, 0.07);
+}
+.container .container_wrapper .detail_wrapper .detail.c_show {
+  color: hsl(166deg, 100%, 37%);
+  background-color: hsla(166deg, 100%, 37%, 0.07);
+}
+.container .container_wrapper .detail_wrapper .detail.d_show {
+  color: hsl(234deg, 85%, 45%);
+  background-color: hsla(234deg, 85%, 45%, 0.07);
+}
+.container .container_wrapper .detail_wrapper .action_btn {
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+}
+.container .container_wrapper .detail_wrapper .action_btn button {
+  border: none;
+  outline: transparent;
+  width: 100%;
+  height: 3em;
+  border-radius: 30px;
+  background-color: hsl(224deg, 30%, 27%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 20px;
+}
+.container .container_wrapper .detail_wrapper .action_btn button:hover {
+  background-color: hsl(241deg, 81%, 54%);
+}/*# sourceMappingURL=main.css.map */

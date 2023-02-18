@@ -1,0 +1,155 @@
+@use "./components/breakpoints" as break;
+@use "./components/colors";
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@500;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  font-family: "Epilogue", sans-serif;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  @include break.breakpoint("small") {
+    height: 100vh;
+    align-items: center;
+  }
+
+  .container_wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    @include break.breakpoint("small") {
+      flex-direction: row;
+      box-shadow: 0 0 12px 8px #ddf8ff;
+      border-radius: 30px;
+      width: 45em;
+    }
+
+    .result_wrapper {
+      color: colors.$Pale_blue;
+      //   background-color: colors.$Light_royal_blue;
+      background-image: linear-gradient(
+        to top,
+        colors.$Light_royal_blue,
+        colors.$Light_royal_fade
+      );
+      min-height: 42vh;
+      margin: auto;
+      display: flex;
+      padding: 2em 3.2em;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      @include break.breakpoint("small") {
+        border-radius: 30px;
+        width: 50%;
+        min-height: 50vh;
+      }
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      .circle {
+        margin: auto;
+        padding-block-start: 2em;
+        width: 130px;
+        height: 130px;
+        line-height: 40px;
+        border-radius: 100%;
+        justify-content: center;
+
+        background-image: linear-gradient(
+          to top,
+          colors.$Persian_blue,
+          colors.$Violet_blue
+        );
+        h1 {
+          font-size: 3em;
+        }
+        span {
+          color: colors.$Light_lavender;
+        }
+        @include break.breakpoint("medium") {
+          width: 160px;
+          height: 160px;
+          //   padding-block-start: 2.5em;
+          line-height: 50px;
+          h1 {
+            font-size: 3.5em;
+          }
+        }
+      }
+      .slogan {
+        h2 {
+          margin-block-end: 1em;
+        }
+        p {
+          font-weight: 100;
+          font-size: 16px;
+        }
+      }
+    }
+    .detail_wrapper {
+      padding: 2em;
+      margin-block-start: 2em;
+      @include break.breakpoint("small") {
+        margin-block-start: 0.5rem;
+        width: 50%;
+      }
+      padding-inline: 20px;
+      .detail {
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-block: 1em;
+        padding: 15px 20px;
+        justify-content: space-between;
+
+        .subject {
+          display: flex;
+        }
+        &.a_show {
+          color: colors.$Light_red;
+          background-color: colors.$Light_red_bg;
+        }
+        &.b_show {
+          color: colors.$Orangey_yellow;
+          background-color: colors.$Orangey_yellow_bg;
+        }
+        &.c_show {
+          color: colors.$Green_teal;
+          background-color: colors.$Green_teal_bg;
+        }
+        &.d_show {
+          color: colors.$Cobalt_blue;
+          background-color: colors.$Cobalt_blue_bg;
+        }
+      }
+      .action_btn {
+        margin-block-start: 2em;
+        button {
+          border: none;
+          outline: transparent;
+          width: 100%;
+          height: 3em;
+          border-radius: 30px;
+          background-color: colors.$Dark_gray_blue;
+          color: colors.$White;
+          font-size: 20px;
+          &:hover {
+            background-color: colors.$Light_royal_blue;
+          }
+        }
+      }
+    }
+  }
+}
